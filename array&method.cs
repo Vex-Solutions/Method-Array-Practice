@@ -11,7 +11,8 @@ namespace learning_1
     internal class Program
     {
         static void Main(string[] args)
-        { 
+        {
+            
             Introduction();
             ArrayHandler();
             Question();
@@ -56,18 +57,32 @@ namespace learning_1
 
             int responsenNumber = response;
            Console.WriteLine(divider);
-            Console.WriteLine("would u like to square?");
+            Console.WriteLine("would u like to square?|    yes|no");
             string answer = Console.ReadLine();
 
             if (answer == "yes")
             {
                 Console.WriteLine(responsenNumber * response);
             }
+            else if (answer == "no") 
+            {
+                Console.WriteLine("wellsd thats mean ):");
+            }
             else
             {
-                Console.WriteLine("well thats mean ):");
+         
+            Console.WriteLine("answer failure");
+                Console.WriteLine("please wait");
+                Thread.Sleep(1000);
+                Console.Clear();
+                Question();
+                
             }
         }
 
+        public static void Qeastion2()
+        {
+
+        }
     }
 }
